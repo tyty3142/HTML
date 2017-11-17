@@ -1,0 +1,33 @@
+#FBCopyCat {
+	position: absolute;
+	left: -320px;
+	background: #3B5998;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -105px;
+	-webkit-transition-duration: 0.3s;
+}
+
+#FBSlide {
+	position: absolute;
+	background: #3B5998;
+	border-radius: 0 5px 5px 0;
+	left: 0;
+	top: 60px;
+	width: 40px;
+	height: 110px;
+	box-shadow: 0 0 5px #888;
+}
+
+#FBSlide p{
+	color: white;
+	font-weight: bold;
+	-webkit-transform: rotate(-90deg);
+	margin-top:65px;
+	font-size:20px;
+	font-family: "Freight Sans Bold";
+}
+
+#FBSlide:hover #FBCopyCat{
+	left:45px;
+}

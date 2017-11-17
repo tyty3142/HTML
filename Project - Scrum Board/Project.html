@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Scrum Board Project </title><!-- name of tab -->
+		<link href="CSS/CSS.css" type="text/css" rel="stylesheet" />
+		<script src="JS/JS.js" type="text/javascript"></script>
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+
+		<form name="taskform" action="#" method="post" onsubmit="return addTask()">
+			<table>
+				<tr>
+					<td> Story ID: </td>
+					<td>
+					<input type="number" name="StorID" min="0" id="StID" required="required" size="20" />
+					</td>
+					<td> Developer Name: </td>
+					<td>
+					<input type="text" name="DevNam" id="DevNam" required="required" size="20" />
+					</td>
+					<td> Time: </td>
+					<td>
+					<input type="number" name="time" min="0" id="time" size="1" />
+					</td>
+					<td> Color: </td>
+					<td>
+					<input type="color" id="color" />
+					</td>
+				</tr>
+				<tr>
+					<td>Story Description: </td>
+					<td colspan="6">
+					<input type="text" id="Desc" required="required" size="100" />
+					</td>
+					<td>
+					<input type="submit" value="Add Task"  />
+					</td>
+				</tr>
+			</table>
+		</form>
+
+		<div id="todo"> </div>
+		<div id="doing"> </div>
+		<div id="done"> </div>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

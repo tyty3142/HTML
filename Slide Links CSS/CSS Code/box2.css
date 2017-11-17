@@ -1,0 +1,37 @@
+#FormBox{
+	position: absolute;
+	left: -500px;
+	background: red;
+	width: 400px;
+	height:425px;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.3s;
+	margin-top:-120px;
+}
+
+#FormSlide{
+	position:absolute;
+	background:red;
+	color:white;
+	left: 0;
+	width: 40px;
+	height: 120px;
+	border-radius: 0 5px 5px 0;
+	margin-top:255px;
+	box-shadow: 0 0 5px #888;
+}
+
+#FormSlide p{
+	color: white;
+	font-weight: bold;
+	-webkit-transform: rotate(-90deg);
+	margin-top:75px;
+	font-size:20px;
+	font-family: "Freight Sans Bold";
+	white-space: nowrap;
+}
+
+#FormSlide:hover #FormBox{
+	left:45px;
+}
