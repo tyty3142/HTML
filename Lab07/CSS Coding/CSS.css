@@ -1,0 +1,126 @@
+#FBCopyCat {
+	position: absolute;
+	left: -320px;
+	background: #3B5998;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -105px;
+	-webkit-transition-duration: 0.3s;
+}
+
+#FBSlide {
+	position: absolute;
+	background: #3B5998;
+	border-radius: 0 5px 5px 0;
+	left: 0;
+	margin-top: 143px;
+	width: 40px;
+	height: 110px;
+	box-shadow: 0 0 5px #888;
+}
+
+#FBSlide p {
+	color: white;
+	font-weight: bold;
+	-webkit-transform: rotate(-90deg);
+	margin-top: 65px;
+	font-size: 20px;
+	font-family: "Freight Sans Bold";
+}
+
+#FBSlide:hover #FBCopyCat {
+	left: 45px;
+}
+
+#FormBox {
+	position: absolute;
+	left: -500px;
+	background: red;
+	width: 400px;
+	height: 425px;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.3s;
+	margin-top: -110px;
+}
+
+#FormSlide {
+	position: absolute;
+	background: red;
+	color: white;
+	left: 0;
+	width: 40px;
+	height: 110px;
+	border-radius: 0 5px 5px 0;
+	margin-top: 260px;
+	box-shadow: 0 0 5px #888;
+}
+
+#FormSlide p {
+	color: white;
+	font-weight: bold;
+	-webkit-transform: rotate(-90deg);
+	margin-top: 70px;
+	font-size: 20px;
+	font-family: "Freight Sans Bold";
+	white-space: nowrap;
+}
+
+#FormSlide:hover #FormBox {
+	left: 45px;
+}
+
+#Favorite {
+	position: absolute;
+	left: -1000px;
+	background: #660000;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: -105px;
+	size:650px 450px;
+	-webkit-transition-duration: 0.3s;
+}
+
+.FavoriteSlide {
+	position: absolute;
+	background: orange;
+	border-radius: 0 5px 5px 0;
+	left: 0;
+	top: 35px;
+	width: 40px;
+	height: 110px;
+	box-shadow: 0 0 5px #888;
+}
+
+.FavoriteSlide p {
+	font-weight: bold;
+	color: white;
+	-webkit-transform: rotate(-90deg);
+	margin-top: 65px;
+	font-size: 20px;
+	font-family: "Freight Sans Bold";
+	white-space: nowrap;
+	text-align: center;
+}
+
+.FavoriteSlide:hover #Favorite {
+	left: 50px;
+}
+
+#Games, #Videos, #Books {
+	background: orange;
+	border-radius: 5px;
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	text-shadow: 3px 3px 3px #888;
+	size: 450px 650px;
+	text-align:center;
+}
+
+#Favorite td{
+	color:white;
+	background:blue;
+	white-space:nowrap;
+	padding:10px;
+}

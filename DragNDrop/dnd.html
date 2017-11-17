@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Drag And Drop </title><!-- name of tab -->
+		<script type="text/javascript" src="JS/DnD.js"></script>
+		<link rel="stylesheet" type="text/css" href="Css/DnD.css" />
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+
+		<p>
+			Drag the notes into the rectangles:
+		</p>
+
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+		<div id="drag1" draggable="true" ondragstart="drag(event)">Note 1</div>
+		<div id="drag2" draggable="true" ondragstart="drag(event)">Note 2</div>
+		<div id="drag3" draggable="true" ondragstart="drag(event)">Note 3</div>
+		
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

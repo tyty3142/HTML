@@ -1,0 +1,36 @@
+#Wrapper{
+width: 950px;
+margin: auto;
+}
+
+#Left{
+width: 50%;
+height: 100%;
+float:left;
+}
+
+#Right{
+width: 50%;
+height: 100%;
+float: left;
+}
+
+#BottomRight{
+width: 100%;
+}
+
+.tasktable{
+font-family: "Agency FB";
+width: 100%;
+}
+
+.tableDate{
+width: 35%;
+border: 1px solid black;
+}
+
+.tableTask{
+width: 65%;
+border: 1px solid black;
+}
+

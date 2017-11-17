@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Side Slide Boxes</title><!-- name of tab -->
+		<link href="CSS Coding/CSS.css" rel="stylesheet" type="text/css" />
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+
+		<div id="FBSlide">
+			<p>
+				Facebook
+			</p>
+			<div id="FBCopyCat">
+				<iframe src="http://www.facebook.com/plugins/likebox.php?href=
+				https://www.facebook.com/SouthernIllinoisUniversityCarbondale&amp
+				;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp
+				;header=true&amp;stream=true&amp;show_border=true"
+				scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:590px;"
+				allowTransparency="true"></iframe>
+
+			</div>
+		</div>
+
+		<div id="FormSlide">
+			<p>
+				Contact Us
+			</p>
+			<div id="FormBox">
+				<form name="Contact" action="Contact.php" method="post">
+					<table>
+						<tr>
+							<td><label for="Name">Enter Your Name: </label></td>
+						</tr>
+						<tr>
+							<td>
+							<input required="required" pattern="(([a-zA-z]*)([\ ])([A-Za-z]*))" type="text" name="ContactName" id="Name" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="Phone">Phone: </label></td>
+						</tr>
+						<tr>
+							<td>
+							<input type="tel" required="required" pattern="([0-9]{3}[\-]?[0-9]{3}[\-]?[0-9]{4})" name="ContactPhone" id="Phone" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="Email">Email: </label></td>
+						</tr>
+						<tr>
+							<td>
+							<input type="email" required="required" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|net]{3})" name="ContactEmail" id="Email" />
+							</td>
+						</tr>
+						<tr>
+							<td>Message Subject: </td>
+						</tr>
+						<tr>
+							<td>
+							<input list="MessSub" name="MessSub" onchange="checkSub()"/>
+							<datalist id="MessSub" >
+								<!-- allows the user to input a letter to search for option-->
+								<option value="New Request">New Request</option>
+								<option value="Existing Request">Existing Request</option>
+								<option value="Service & Parts">Service and Parts</option>
+							</datalist></td>
+							<td><div id="checkSub"></div></td>
+						</tr>
+						<tr	>
+							<td><label for="Message">Enter Your Message: </label></td>
+						</tr>
+						<tr>
+							<td>							<textarea cols="50" rows="10" id="Message" name="Message"> </textarea></td>
+						</tr>
+					</table>
+					<input type="checkbox" name="CopyEmail" value="CopyEmail" onclick="altEmail()"/>
+					E-mail a copy of this message to your own address
+					<div id="CopyEmail"></div>
+					<input type="submit" value="Submit" name="Submit" />
+				</form>
+			</div>
+		</div>
+
+		<div class="FavoriteSlide">
+			<p>
+				Favorites
+			</p>
+			<div id="Favorite">
+				<table>
+					<tr>
+						<td>
+						<div id="Games">
+							<b>Games</b>
+						</div></td>
+						<td>
+						<div id="Videos">
+							<b>Videos</b>
+						</div></td>
+						<td>
+						<div id="Books">
+							<b>Books</b>
+						</div></td>
+					</tr>
+					<tr>
+						<td style="background-color: purple">
+						<ol>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Kingdom_Hearts_%28video_game%29">Kingdom Hearts</a>
+							</li>
+							<li>
+								<a href="http://www.rockstargames.com/grandtheftauto/"> Grand Theft Auto</a>
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic"> Star Wars: Knights Of The Old Republic</a>
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Halo:_Combat_Evolved">Halo: Combat Evolved</a>
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Souls_%28series%29">Dark Souls</a>
+							</li>
+						</ol></td>
+						<td style="background-color: pink">
+							<ol>
+								<li><a href="https://www.youtube.com/watch?v=-OCckLvaSd4&index=10&list=WL">Disturbingly Funny Moments in Late Night</a></li>
+								<li><a href="https://www.youtube.com/watch?v=1D61dV18TNE">Game Grumps Animated</a></li>
+								<li><a href="https://www.youtube.com/watch?v=gKiBaEAUEPk">Lazer Collection</a></li>
+								<li><a href="https://www.youtube.com/watch?v=Fu2DcHzokew">Charlie The Unicorn</a></li>
+								<li><a href="https://www.youtube.com/watch?v=SXX0U5DXZeU">Llamas With Hats</a></li>
+							</ol></td>
+						<td style="background-color: #230559">
+						<ol>
+							<li><a href="https://en.wikipedia.org/wiki/It_%28novel%29">IT</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Needful_Things">Needful Things</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Dean_Koontz's_Frankenstein">Dean Koontz Frankenstein Series</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/The_Maze_Runner_%28series%29">Maze Runner Series</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/City_of_the_Dead_%28novel%29">City Of The Dead</a></li> 
+						</ol></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

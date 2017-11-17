@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Proj 01</title><!-- name of tab -->
+		<script type="text/javascript">
+			function setIframeSource() {
+				var theSelect = document.getElementById('location');
+				var theUrl = theSelect.options[theSelect.selectedIndex].value;
+				var code = "";
+				if (theUrl == 'JavaTutorial') {
+					code = code + "<iframe width='560' height='315' src='https://www.youtube.com/embed/H4GhGmlcPJ8' allowfullscreen></iframe>";
+				}
+				if (theUrl == 'HTMLtutorial') {
+					code = code + "<iframe width='560' height='315' src='https://www.youtube.com/embed/-USAeFpVf_A' allowfullscreen></iframe>";
+				}
+				if (theUrl == 'HTMLandCSS') {
+					code = code + "<iframe width='560' height='315' src='https://www.youtube.com/embed/-USAeFpVf_A' allowfullscreen></iframe>";
+				}
+				if (theUrl == 'JavaSimple') {
+					code = code + "<iframe width='560' height='315' src='https://www.youtube.com/embed/jWTjHmuuvJs' allowfullscreen></iframe>";
+				}
+				if (theUrl == '12minHTML') {
+					code = code + "<iframe width='560' height='315' src='https://www.youtube.com/embed/bWPMSSsVdPk' allowfullscreen></iframe>";
+				}
+				document.getElementById('video').innerHTML = code;
+			}
+		</script>
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<header>
+			<img src="ImageCollecter/Home.png" alt="" />
+		</header>
+		<nav>
+			<a href="Home.html">Home </a>| <a href="Info.html">Info</a>| <a href="Favorites.html">Favorites</a>| <a href="Contact.html">Contact</a>
+		</nav>
+		<main>
+			<p>Hello, and welcome to my page. These couple of html pages have given me the worst fun I could ever enjoy.<br />
+				This is the home page, and from here, you can navigate through other parts.<br />
+				Feel free to explore and Enjoy!
+			</p>
+			<form id="form1" method="post">
+				<h2>Video Tutorials</h2>
+				<hr />
+				Name:
+				<select name="location" id="location" onchange="setIframeSource()">
+					<option value="JavaTutorial">Java Tutorial For Beginners</option>
+					<option value="HTMLtutorial">Html Tutorial for Beginners</option>
+					<option value="HTMLandCSS">HTML and CSS Tutorial Create Your own Complete Website </option>
+					<option value="JavaSimple">Learn Java Simply Full (Part 1/3) </option>
+					<option value="12minHTML">Learn HTML in 12 Minutes </option>
+				</select>
+				<div id="video"></div>
+			</form>
+
+		</main>
+		<footer>
+			<hr />
+			<table>
+				<tr>
+					<td> Southern Illinois University - © 2016
+					<br />
+					<i>IST 336 - Web-based Applications in Information Systems</i>
+					<br />
+					Spring 2016</td>
+					<td> Name: Tyler Brown
+					<br />
+					Email: <a href="mailto:tyler0726@siu.edu">tyler0726@siu.edu</a>
+					<br />
+					Phone: (630)414-9143</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

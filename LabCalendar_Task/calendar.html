@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Calendar</title>
+		<link rel="stylesheet" type="text/css" href="css/calendar.css" />
+		<link rel="stylesheet" type="text/css" href="css/task.css" />
+		<script type = "text/javaScript" src="js/calendar.js"></script>
+		<script type = "text/javaScript" src="js/task.js"></script>
+	</head>
+	
+	<body onload="setDate();buildCalendar();">
+	
+	<div id="Wrapper">				<!--Start Wrapper-->
+
+		<div id="Left">				<!--Start Left Div-->
+			
+			<div id="TopLeft">		<!--Start TopLeft Div-->
+				<table>
+					<tr>
+						<td>
+							Day: 
+						</td>
+						<td>
+<!--Select the Day-->		<input id="myday" type="number" min="1" max="31" onchange="buildCalendar()"/>						
+						</td>
+						<td>
+							Month:
+						</td>
+						<td>		
+<!--Select the Month-->		<select id="mymonth" name="mymonth" size="1" onchange="buildCalendar()"> 	
+								<option value="0">January</option> 
+								<option value="1">February</option> 
+								<option value="2">March</option>
+								<option value="3">April</option>
+								<option value="4">May</option>
+								<option value="5">June</option>
+								<option value="6">July</option>
+								<option value="7">August</option>
+								<option value="8">September</option>
+								<option value="9">October</option>
+								<option value="10">November</option>
+								<option value="11">December</option>         
+							</select> 
+						</td>
+						<td>
+							Year:
+						</td>
+						<td>
+<!--Select the Year-->		<input id="myyear" type="number" min="100" onchange="buildCalendar()"/>								
+						</td>
+					</tr>
+				</table>
+			</div>					<!--End TopLeft Div-->
+			
+			<div id="BottomLeft">	<!--Start BottomLeft Div-->
+				
+			</div>					<!--End BottomLeft Div-->
+		
+		</div>						<!--End Left Div-->
+		
+		<div id="Right">			<!--Start Right Div-->
+			
+			<div id="TopRight">		<!--Start TopRight Div-->
+				<form name="taskform" action="#" method="post" onsubmit="return addTask()">		<!--Start the form-->
+					<table>												<!--Start the table to make pretty-->
+						<tr>
+							<td>
+								Date:
+							</td>
+							<td colspan="2">							<!--Enter the Date-->
+								<input type="date" name="taskdate" id="taskdate" required="required" title="A task date must be entered">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Task:
+							</td>
+							<td>										<!--Enter the Task-->
+								<textarea name="taskinfo" id="taskinfo" required="required" title="A task description must be entered" rows="3" cols="40" placeholder="Describe the task here..." ></textarea>
+							</td>
+							<td>										<!--Send It-->
+								<input type="submit" name="send" value="Add Task" />
+							</td>
+						</tr>
+					</table>										<!--End the table-->
+				</form>												<!--End the form-->
+			</div>					<!--End TopRight Div-->
+			
+			<div id="BottomRight">	<!--Start BottomRight Div-->
+				
+			</div>					<!--End BottomRight Div-->
+		
+		</div>						<!--End Right Div-->
+	
+	</div>							<!--End Wrapper-->
+		
+	</body>
+</html>

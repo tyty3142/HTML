@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Proj 01 </title><!-- name of tab -->
+		<script src="JavaCode/JavaScript.js" type="text/javascript"></script>
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<header>
+			<img alt="" src="ImageCollecter/Picture2.png" />
+		</header>
+		<nav>
+			<a href="Home.html">Home </a>| <a href="Info.html">Info</a>| <a href="Favorites.html">Favorites</a>| <a href="Contact.html">Contact</a>
+		</nav>
+		<main>
+			<h1>Contact Me</h1>
+			<hr />
+			<form name="Contact" action="Contact.php" method="post">
+				<table>
+					<tr>
+						<td><label for="Name">Enter Your Name: </label></td>
+					</tr>
+					<tr>
+						<td>
+						<input required="required" pattern="(([a-zA-z]*)([\ ])([A-Za-z]*))" type="text" name="ContactName" id="Name" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="Phone">Phone: </label></td>
+					</tr>
+					<tr>
+						<td>
+						<input type="tel" required="required" pattern="([0-9]{3}[\-]?[0-9]{3}[\-]?[0-9]{4})" name="ContactPhone" id="Phone" />
+						</td>
+					</tr>
+					<tr>
+						<td><label for="Email">Email: </label></td>
+					</tr>
+					<tr>
+						<td>
+						<input type="email" required="required" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|net]{3})" name="ContactEmail" id="Email" />
+						</td>
+					</tr>
+					<tr>
+						<td>Message Subject: </td>
+					</tr>
+					<tr>
+						<td>
+						<input list="MessSub" name="MessSub" onchange="checkSub()"/>
+						<datalist id="MessSub" >
+							<!-- allows the user to input a letter to search for option-->
+							<option value="New Request">New Request</option>
+							<option value="Existing Request">Existing Request</option>
+							<option value="Service & Parts">Service and Parts</option>
+						</datalist></td>
+						<td><div id="checkSub"></div></td>
+					</tr>
+					<tr	>
+						<td><label for="Message">Enter Your Message: </label></td>
+					</tr>
+					<tr>
+						<td>						<textarea cols="50" rows="10" id="Message" name="Message"> </textarea></td>
+					</tr>
+				</table>
+				<input type="checkbox" name="CopyEmail" value="CopyEmail" onclick="altEmail()"/>
+				E-mail a copy of this message to your own address
+				<div id="CopyEmail"></div>
+				<input type="submit" value="Submit" name="Submit" />
+			</form>
+		</main>
+		<footer>
+			<hr />
+			<table>
+				<tr>
+					<td> Southern Illinois University - © 2016
+					<br />
+					<i>IST 336 - Web-based Applications in Information Systems</i>
+					<br />
+					Spring 2016</td>
+					<td> Name: Tyler Brown
+					<br />
+					Email: <a href="mailto:tyler0726@siu.edu">tyler0726@siu.edu</a>
+					<br />
+					Phone: (630)414-9143</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

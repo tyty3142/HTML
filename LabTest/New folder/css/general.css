@@ -1,0 +1,87 @@
+body{
+	font-family: "Helvetica";
+	size:950px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding 10px;
+	background-image: url('../images/hazy_background_tile.png');
+}
+
+#logo{
+	float:left;
+	size:150px 150px;
+}
+
+#titleSlogan{
+	float: right;
+	color: orange;
+	text-shadow: 5px 5px 3px #888;
+}
+
+h3{
+	font-style: italic;
+	text-align:right;
+	font-size: 24px;
+	color: #808080;
+}
+
+header{
+	padding: 20px;
+	text-align: center;
+	border: 2px;
+	border-radius: 25px;
+}
+
+header h1{
+	font-size:40px;
+}
+
+#titlePage{
+	padding-top: 50px;
+}
+
+#titlePage h1{
+	color: blue;
+	text-shadow:5px 5px 3px #888;
+	font-family:"Arial Black";
+	font-size:44px;
+	text-align:center;
+	margin:10px;
+}
+
+#titlePage img{
+	border-radius:10px;
+	box-shadow: 5px 5px 3px #888;
+	margin: 0 auto;
+	display: block;
+}
+
+h2{
+	margin: 50px;
+	font-family: "Agency FB";
+	font-size: 30px;
+	color:blue;
+	text-shadow:5px 5px 3px #888;
+}
+
+.navigation{
+	clear:left;
+	padding: 10px;
+}
+
+.navigation li{
+	display:inline;
+}
+
+.navigation li a{
+	font-family:"Arial"
+	font-size:20px;
+	padding: 10px;
+	float: left;
+}
+
+.navigation li a:hover{
+	background-color: #808080;
+	color:white;
+	border-radius:5px;
+}

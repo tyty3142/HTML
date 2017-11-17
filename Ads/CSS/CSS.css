@@ -1,0 +1,87 @@
+#ad{
+	width:600px;
+	height:300px;
+	background-color: green;
+	margin:auto;
+	box-shadow: 3px 3px 5px #888;
+	background-image: url("../images/field.png");
+	background-size:600px 300px;
+	opacity:0.8
+}
+
+#teamLeft{
+	position: absolute;
+	transform: rotate(-90deg);
+	margin-top:219px;
+	margin-left: -34px;
+	color:white;
+	font-family:Verdana;
+}
+
+#teamRight{
+	position: absolute;
+	transform: rotate(90deg);
+	margin-top:50px;
+	margin-left: 522px;
+	color:white;
+	font-family:Verdana;
+}
+
+#saluki{
+	position:absolute;
+	width:200px;
+	top:105px;
+	padding-left:200px;
+	z-index:-1;
+	opacity:.5;
+}
+
+#logo{
+	position:absolute;
+	width:220px;
+	top: 215px;
+	padding-left: 20px;
+	animation: logo 5s infinite;
+}
+
+@keyframes logo{
+	10%{padding-left:15px;}
+	25%{transform: rotate(10deg); padding-left:405px;}
+	50%{top:45px; padding-left: 360px;}
+	75%{transform: rotate(0deg); padding-left:0px;}
+	100%{top:215px; padding-left:20px;}
+}
+
+#football{
+	position:absolute;
+	width:40px;
+	top: 145px;
+	padding-left:10px;
+	animation: football 5s infinite;
+}
+
+@keyframes football{
+	10%{width:40px; padding-left: 10px;}
+	50%{width:125px; padding-left: 240px;}
+	100%{width:40px; padding-left:550px;}
+}
+
+#touchdown{
+	text-align: center;
+	line-height:300px;
+	font-size:1px;
+	font-family:Arial;
+	font-weight:bold;
+	text-shadow: 3px 3px 5px #888;
+	animation: touchdown 5s infinite;
+}
+
+@keyframes touchdown{
+	0%{display:none; font-size:1px;}
+	60%{display:none; font-size:1px;}
+	80%{color:white;}
+	85%{color:green;}
+	90%{color:blue;}
+	95%{color:pink;}
+	100%{display:black; font-size:70px; color:yellow;}
+}

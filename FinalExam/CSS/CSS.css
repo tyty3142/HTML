@@ -1,0 +1,230 @@
+#Wrapper {
+	width: 1250px;
+	height: 825px;
+	margin: auto;
+	padding: 10px;
+	background-color: pink;
+}
+
+#Area1 {
+	height: 100px;
+	background-color: #660000;
+	font-family: Times;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+	text-shadow: 5px 5px 5px black;
+}
+
+#Area2 img, #Area3 img, #Area4 img {
+	height: 285px;
+	width: 278px;
+	padding: 10px;
+	box-shadow: 1px 1px 1px black;
+}
+
+#Area2 img {
+	margin-left: 350px;
+	position: absolute;
+}
+
+#Area3 img {
+	position: absolute;
+	margin-left: 650px;
+	margin-top: 0px;
+}
+
+#Area4 img {
+	margin-left: 950px;
+	margin-top: 0px;
+	position: absolute;
+}
+
+#Area5 {
+	width: 325px;
+	height: 300px;
+	position:inherit;
+}
+#Area6 {
+	position: inherit;
+	width: 325px;
+	height: 240px;
+	margin-top:30px;
+	margin-left:-5px;
+	text-align:center;
+}
+#Area7 {
+	background-color: white;
+	width: 875px;
+	height: 325px;
+	margin-top:-355px;
+	margin-left:350px;
+	position:absolute;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #888;
+}
+
+#Area7 tr{
+	font-size:50px;
+}
+
+#Area7 input{
+	size:30px;
+}
+
+.Image1{
+	margin-top:0px;
+	position:absolute;
+	overflow: hidden;
+	margin-left:-20px;
+}
+
+.Bigtxt{
+	font-size:40px;
+	margin-left:120px;
+	font-weight: bold;
+}
+
+.smltxt{
+	font-size:20px;
+	margin-left:120px;
+	margin-top:-20px;
+}
+
+#Button{
+	position: absolute;
+	margin-left:750px;
+	margin-top:-50px;
+}
+
+.dark{
+	z-index: 1;
+}
+.white{
+	margin-top:-110px;
+	visibility:hidden;
+}
+
+#Programs, #People, #Advisement, #Connect{
+	background-color:lightblue;
+	border-radius:3px 3px 3px;
+	
+}
+
+#Programs, #People, #Advisement, #Connect{
+	margin-top:-20px;
+}
+
+.Image2{
+	margin-top:0px;
+	position:absolute;
+	overflow: hidden;
+	margin-left:-20px;
+}
+
+.dark1{
+	z-index: 1;
+	height:120px;
+}
+.white1{
+	margin-top:-107px;
+	visibility:hidden;
+}
+
+.Image3{
+	margin-top:0px;
+	position:absolute;
+	overflow: hidden;
+	margin-left:-20px;
+}
+
+.dark2{
+	z-index: 1;
+	height:120px;
+}
+.white2{
+	margin-top:-107px;
+	visibility:hidden;
+}
+
+.Image4{
+	margin-top:0px;
+	position:absolute;
+	overflow: hidden;
+	margin-left:-20px;
+}
+
+.dark3{
+	z-index: 1;
+	height:120px;
+}
+.white3{
+	margin-top: -107px;
+	margin-left:.1px;
+	z-index:0;
+	visibility:hidden;
+}
+
+#Connect{
+	height:100px;
+}
+
+#Programs:hover, #People:hover, #Advisement:hover, #Connect:hover{
+	background-color: #8aDdf2;
+	border-color:white;
+	border: .5px solid;
+	padding: 5px;
+	
+}
+#Programs:hover .dark{
+	visibility:hidden;
+}
+
+#Programs:hover .white{
+	visibility:visible;
+}
+
+#People:hover .dark1{
+	visibility:hidden;
+}
+
+#People:hover .white1{
+	visibility:visible;
+}
+
+#Advisement:hover .dark2{
+	visibility:hidden;
+}
+
+#Advisement:hover .white2{
+	visibility:visible;
+}
+
+#Connect:hover .dark3{
+	visibility:hidden;
+}
+
+#Connect:hover .white3{
+	visibility:visible;
+}
+
+#ISTHover, #TRMHover, #ESTHover{
+	background-color:lightgray;	
+	width:278px;
+	text-align:center;
+	position:absolute;
+	margin-top:-70px;
+}
+
+#ISTHover{
+	margin-left:360px;
+}
+
+#TRMHover{
+	margin-left:660px;
+}
+
+#ESTHover{
+	margin-left:960px;
+}

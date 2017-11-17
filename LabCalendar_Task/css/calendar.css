@@ -1,0 +1,33 @@
+.caltable{
+	font-family: "Agency FB";
+	margin: 20px;
+	box-shadow: 0 0 5px #888;
+}
+
+.caltable th {
+	height: 30px;
+	padding: 3px;
+}
+
+.caltable td{
+	width:50px;
+	height:50px;
+	text-align: center;
+	padding: 3px;
+}
+
+.calmonth{
+	background: rgb(173,216,230);
+}
+
+.calweekday{
+	background: rgb(128,128,128);
+}
+
+#dday{
+	background: yellow;
+}
+
+#tday{
+	background: silver;
+}

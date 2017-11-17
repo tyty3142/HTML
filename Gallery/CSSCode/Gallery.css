@@ -1,0 +1,85 @@
+body {
+	background-color: #d9d6cb;
+}
+
+#Title {
+	font-family: "Agency FB";
+	text-shadow: 5px 5px 5px #888;
+	text-align: center;
+}
+
+#mygallery {
+	width: 580px;
+	padding: 20px;
+	background-color: black;
+	margin: auto;
+}
+
+#fullimage {
+	list-style: none;
+	width: 580px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-animation: slideimage 0.5s;
+	-moz-animation: slideimage 0.5s;
+	animation: slideimage 0.5s;
+}
+
+#fullimage img {
+	width: 580px;
+}
+
+#thumbnail {
+	list-style: none;
+	overflow: auto;
+}
+
+#thumbnail img {
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-left: 5px;
+	border: 1px solid white;
+	opacity: 0.5;
+}
+
+#thumbnail img:hover {
+	opacity: 1;
+}
+
+@keyframes slideimage{
+0% {left:-700px; }
+100%{left:0px;}
+}
+
+@-webkit-keyframes slideimage{
+0% {left:-700px;}
+100%{left:0px;}
+}
+
+#thumbnail li {
+	position: relative;
+}
+
+#fullimage li {
+	position: relative;
+}
+
+#mygallery li p {
+	z-index: 1;
+	font-family: Verdana;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#fullimage li:target {
+	-webkit-animation: slideimage 0.5s;
+	-moz-animation: slideimage 0.5s;
+}

@@ -1,0 +1,32 @@
+@-webkit-keyframes Anyname{
+	0% {background: black; left:0px; top:0px;}
+	25% {background: red; left:400px; top:0px;}
+	50% {background: yellow; left:400px; top:400px;}
+	75% {background: purple; left:0px; top:400px;}
+	100% {background: black; left:0px; top:0px;}
+}
+
+@keyframes Anyname{
+	0% {background: black; left:0px; top:0px;}
+	25% {background: red; left:400px; top:0px;}
+	50% {background: yellow; left:400px; top:400px;}
+	75% {background: purple; left:0px; top:400px;}
+	100% {background: black; left:0px; top:0px;}
+}
+
+#div1{
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-size: 200px 200px;
+	box-shadow: 0 0 5px 5px #888;
+	background-color: black;
+	color: white;
+	-webkit-animation: Anyname 5s;
+	animation: Anyname 5s;
+	position:relative;
+}
+
+div img {
+	width: 100%;
+}
