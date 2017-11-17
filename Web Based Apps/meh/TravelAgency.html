@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Travel Agency </title><!-- name of tab -->
+		<script src="Transport.js" type="text/javascript"></script>
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+
+		<script type="text/javascript">
+			alert("Hello Valued Customer. Welcome to No Mas Pantalones\nWhere flights and car rides have no restrictions");
+		</script>
+		<h1>No Mas Pantalones</h1>
+		<h3>With us, You Dont Have to Wear Pants on Your Trip To Paradise! </h3>
+		<form name="Lab05" action="airline.php" method="post">
+			<table>
+				<tr>
+					<th><label for="ClientName">Please enter in your name: </label></th>
+					<td>
+					<input type="text" pattern="([A-Za-z][A-Za-z]*)" required="required" id="ClientName" placeholder="John Doe"/>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="clientEmail"> Please enter in your Email: </label></th>
+					<td >
+					<input type="email" required="required"
+					placeholder="johndoe@email.com" id="clientEmail" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|org|net]{3})"/>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="clientNumber"> Please enter in your Phone Number: </label></th>
+					<td>
+					<input type="tel" id="clientNumber" required="required" placeholder="555-555-7890" pattern="(([0-9]{3})[\-]([0-9]{3})[\-]([0-9]{4}))"/>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="clientAddress">Please enter in your Address: </label>
+					</th>
+					<td>
+						<input type="text" id="clientAddress" placeholder="42 P. Sherman Wallaby Way"/>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="clientCity">Please enter in the City that you live in: </label>
+					</th>
+					<td>
+						<input type="text" required="required" id="clientCity" placeholder="City" />
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="clientZip">Please enter in your Zip code: </label>
+					</th>
+					<td>
+						<input type="text" id="clientZip" required="required" pattern="(\d{5}([\-]\d{4})?)" placeholder="XXXXX"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" id="flight" name="transport" onclick="flyTrans()" value="Flight"/>Flight
+						<input type="radio" id="car" name="transport" onclick="carTrans()" value="Car"/> Car
+						
+					</td>
+				</tr>
+			</table>
+			<div id="Trans"> </div>
+			<input type="submit" name="submit" value="sumbit"/>
+			<input type="reset" name="reset" value="reset" />
+		</form>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

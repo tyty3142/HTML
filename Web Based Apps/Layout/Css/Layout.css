@@ -1,0 +1,71 @@
+body{
+	margin:0px;
+	padding:0px;
+	
+}
+
+#wrapper{
+	width: 900px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 5px #888;
+	border-radius: 5px;
+}
+
+#header{
+	background-image:url('../images/Banners.png');
+	border-radius:5px 5px 0 0;
+	float: left;
+	width: 100%;
+	height: 180px;
+	
+}
+
+#leftSect{
+	background: turquoise;
+	float: left;
+	width: 150px;
+}
+
+#menu{
+	background: pink;
+	float:left;
+	width:140px;
+	height:200px;
+	margin:5px;
+}
+
+#link{
+	background: #D5E3FF;
+	float:left;
+	width:140px;
+	height:200px;
+	margin:5px;
+}
+
+#content{
+	background: #FF00FF;
+	float:left;
+	width:740px;
+	margin:5px;
+}
+
+#footer{
+	background: #CCFFCC;
+	clear:left;
+	height:100px;
+}
+
+#header h1{
+	color:pink;
+	padding: 5px;
+	padding-left: 20px;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "Comic Sans MS"g;
+	color:#FF0000;
+	text-shadow: 2px 2px 2px #333;
+	background: rgba(0, 0, 0, .3);
+	margin-top: 50px;
+}

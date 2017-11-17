@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Demo HTML5 </title><!-- name of tab -->
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<h1>Demo HTML5</h1>
+
+		<!-- input tag required -->
+		<form action="demo.php" name="Demo" action="post">
+			<p>Website: <input type="url" name="url" /></p>
+			<p>Start Meeting: <input type="time" name="time" /></p>
+			<p>Tips: <input type="number" min="0" max="100" name="tips" />%</p>
+			<p>Badge color: <input type="color" name="badgeColor"/></p>
+			<p>DOB: <input type="date" name="DOB" /></p>
+			<p>Graduation: <input type="month" name="Graduation" /></p>
+			<p>Email <input type="email" name="email" /></p>
+			<p>Submission: <input type="datetime-local" name="DOB" /></p>
+			<!-- accepts only a certain pattern V -->
+			<p>Country code: <input type="text" name="country" pattern="[A-Za-z]{3}" title="Three letter country code" /></p>
+			<input list="browsers" name="bowser" />
+			<datalist id="browsers">
+				<!-- allows the user to input a letter to search for option-->
+				<option value="Internet Explorer"> </option>
+				<option value="Firefox"> </option>
+				<option value="Chrome"> </option>
+				<option value="Safari"> </option>
+				<option value="Opera"> </option>
+			</datalist>
+	<p> Username<input type="text" name="username" required="required"  /></p>
+	<p>Browser <input type="text" name="Browser" required="required" /></p>
+	<input type="submit" name="submit" />
+		</form>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title></title><!-- name of tab -->
+	</head>
+	
+	<!-- code above is important and needed in every code -->
+	<body>
+		<details>
+			<summary>
+				ISAT 403
+			</summary>
+			<p>
+				Client-Side Web Development
+			</p>
+		</details>
+		<details>
+			<summary>
+				CreepySmile.crp
+			</summary>
+			<img src="" />
+		</details>
+		<details>
+			<summary>
+				Form.GG
+			</summary>
+			<form name="Lab05" action="airline.php" method="post">
+				<table>
+					<tr>
+						<th><label for="ClientName">Please enter in your name: </label></th>
+						<td>
+						<input type="text" pattern="([A-Za-z][A-Za-z]*)" required="required" id="ClientName" placeholder="John Doe"/>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="clientEmail"> Please enter in your Email: </label></th>
+						<td >
+						<input type="email" required="required"
+						placeholder="johndoe@email.com" id="clientEmail" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|org|net]{3})"/>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="clientNumber"> Please enter in your Phone Number: </label></th>
+						<td>
+						<input type="tel" id="clientNumber" required="required" placeholder="555-555-7890" pattern="(([0-9]{3})[\-]([0-9]{3})[\-]([0-9]{4}))"/>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="clientAddress">Please enter in your Address: </label></th>
+						<td>
+						<input type="text" id="clientAddress" placeholder="42 P. Sherman Wallaby Way"/>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="clientCity">Please enter in the City that you live in: </label></th>
+						<td>
+						<input type="text" required="required" id="clientCity" placeholder="City" />
+						</td>
+					</tr>
+					<tr>
+
+						<th><label for="clientZip">Please enter in your Zip code: </label></th>
+						<td>
+						<input type="text" id="clientZip" required="required" pattern="(\d{5}([\-]\d{4})?)" placeholder="XXXXX"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input type="radio" id="flight" name="transport" onclick="flyTrans()" value="Flight"/>
+						Flight
+						<input type="radio" id="car" name="transport" onclick="carTrans()" value="Car"/>
+						Car </td>
+					</tr>
+				</table>
+				<div id="Trans"></div>
+				<input type="submit" name="submit" value="sumbit"/>
+				<input type="reset" name="reset" value="reset" />
+			</form>
+		</details>
+		<details>
+			<summary>
+				Time
+			</summary>
+			<time datetime = "2012-08-29T09:00">
+				August 8, 2012 9:00 am
+			</time>
+			<p>
+				we open at
+				<time>
+					10:00
+				</time>
+				every morning
+			</p>
+		</details>
+		<details>
+			<summary>
+				Magic bar
+			</summary>
+			<meter value="50" min="0" max="100">
+				Points
+			</meter>
+		</details>
+		<details>
+			<summary>
+				Progress
+			</summary>
+			<p>
+				Downloading Progress: <progress value="22" max="100"></progress>
+			</p>
+		</details>
+		<details>
+
+			<summary>
+				Scale
+			</summary>
+			<form action="demo.asp" name="range">
+				<p>
+					<input type="range" id="range" name="value" min="1" max="100" onchange="checkrange()" />
+					<progress value="22" id="progress" name="progress" max="100"> </progress>
+				
+				</p>
+			</form>
+		</details>
+				<details>
+			<summary>
+				CreepySmile.crp
+			</summary>
+			<figcaption>Fig. 1 lookie</figcaption>
+			<img src="http://www.jamesaltucher.com/wp-content/uploads/2012/03/5372.jpeg" />
+		</details>
+		<details>
+			<summary>
+				Navigation
+			</summary>
+			<nav>
+				<a href="http://www.w3schools.com/">HTML </a>|
+				<a href="http://www.w3schools.com/css/">CSS</a>|
+				<a href="http://www.w3schools.com/js/">JavaScript</a>|
+				<a href="http://www.w3schools.com/jquery/">jQuery</a>
+			</nav>
+		</details>
+		
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

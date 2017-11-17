@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Test Form</title><!-- Name of tab -->
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<h1>Registration</h1>
+		<form action="registration.php" method="post">
+			<!-- when the submit button is pressed, it will send the data to that
+			location -->
+			<p>
+				First Name:
+				<input type="text" name="Firstname" size="50"/>
+			</p><!-- Creates a textbox for name and changes the size of the box-->
+
+			<p>
+				Last Name:
+				<input type="text" name="Lastname" size="50"/>
+			</p><!-- will not be put into the array, you cant access it, there is also readonly instead of disabled-->
+			<p>
+				Password:
+				<input type="password" name="code" size="50"/>
+			</p><!-- Creates a textbox for password and hides the input-->
+			<p>
+				Bio:
+				<textarea name="Bio" cols="40" rows="10">
+			</textarea>
+			</p>
+			<!-- creates a txt box for user-->
+
+			<p>
+				Honors Student:
+				<input type="checkbox" name="Honors"/>
+			</p>
+			<p>
+				Transferable
+				<input type="checkbox" name="Transferable"/>
+			</p>
+			<p>
+				<input type= "radio" name="level" value="U"/>
+				Undergraduate
+				<input type="radio" name="level" value="G"/>
+				Graduate
+			</p>
+			<!-- creates a dot to select the input with the option Undergraduate or Graduate. and naming
+			them the same will not allow them to choose both-->
+			<p>
+				Student Year:
+				<select name="Level">
+					<option>Freshman</option>
+					<option>Sophomore</option>
+					<option>Junior</option>
+					<option>Senior</option>
+				</select>
+				<!-- creates a drop down list for the student year choices -->
+			</p>
+			<p>
+				SEX:
+				<input type="radio" name="sex" value="M" />
+				Male
+				<input type="radio" name="sex" value="F" />
+				Female
+			</p>
+
+			<input type="submit" name="Submit" value="Send Data" />
+			<input type="reset" name="reset" value="Clear Form"/>
+		</form>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->

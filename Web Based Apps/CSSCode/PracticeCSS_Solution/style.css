@@ -1,0 +1,91 @@
+body {
+	width: 950px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	border-radius: 10px;
+	font-family: "Verdana";
+}
+
+h1 {
+	color: #660000;
+	text-shadow: 5px 5px 5px #888;
+	padding: 10px;
+	text-align: center;
+}
+
+h2 {
+	padding: 10px;
+	font-family: "Agency FB";
+	font-size: 35px;
+	border-bottom-style: outset;
+	color: gray;
+}
+
+h3 {
+	color: #660000;
+}
+
+.tracks a:link {
+	text-decoration: none;
+	color: blue;
+}
+
+.tracks a:visited {
+	color: gray;
+}
+
+.tracks a:hover {
+	color: red;
+	font-weight: bold;
+}
+
+summary {
+	padding: 10px;
+	margin: 2px;
+	box-shadow: 0 0 5px #888;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #660000;
+}
+
+summary:hover {
+	background-color: #660000;
+	color: white;
+}
+
+summary:focus {
+	background-color: lightgray;
+}
+
+.description {
+	margin-left: 20px;
+	padding: 5px;
+}
+
+.description:first-letter {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.prereq {
+	font-style: italic;
+	margin-left: 20px;
+	padding: 5px;
+}
+
+.advisor {
+	background-color: #d5e3ff;
+	text-align: center;
+	padding: 20px;
+	font-size: 12px;
+}
+
+.advisor a {
+	color: blue;
+	font: bold;
+}
+

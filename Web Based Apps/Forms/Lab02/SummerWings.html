@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Summer Wings </title>
+		<!-- name of tab -->
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<p align="right">
+			14E0202101
+		</p>
+		<h2 align="center">Summer Wings 2014
+		<br/>
+		Registration Form
+		<br/>
+		Registration Deadline: May 13, 2014 </h2>
+		<p>
+			You may register online at <a href="http://www.dce.siu.edu">www.dce.siu.edu. </a>
+			<em>Online Registration requires full payment.</em>
+		</p>
+		<form name="SummerWings" action="SummerWing.php" method="post">
+			<table>
+				<tr>
+					<td><label for="fname"> First Name: </label></td>
+					<td>
+					<input type="text" placeholder="John" required="required" name="fname" id="fname" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="lname"> Last Name: </label></td>
+					<td>
+					<input type="text" required="required" placeholder="Doe" name="lname" id="lname" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="address"> Home Address: </label></td>
+					<td>
+					<input type="text" required="required" name="address" id="address" size="40">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="csz"> City, State, Zip: </label></td>
+					<td>
+					<input type="text" placeholder="City, St, XXXXX"  required="required" pattern="([A-Za-z]*)[\,][\s|\S]([A-Za-z]{2})[\,][\s|\S]([0-9]{5})"
+					name="csz" id="csz" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="phone"> Home Phone: </label></td>
+					<td>
+					<input type="text" title="xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx"
+					pattern="([0-9]{3})[-]([0-9]{3})[-]([0-9]{4})" name="phone"
+					id="phone" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="email"> Email: </label></td>
+					<td>
+					<input type="email" placeholder="johndoe@email.com" pattern="([A-Za-z]*[0-9]*)[@][A-Za-z]*[\.]([edu|com|net]{3})"
+					name="email" id="email">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="birthday"> Birthday: </label></td>
+					<td>
+					<input type="date" name="birthday" id="birthday" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="school"> School Name: </label></td>
+					<td>
+					<input type="text" name="school" id="school" size="40">
+					</td>
+				</tr>
+				<tr>
+					<td> Gender: </td>
+					<td>
+					<input type="radio" name="gender" id="gender">
+					<label for="gender"> Male </label>
+					<input type="radio" name="gender" id="gender2">
+					<label for="gender2"> Female </label></td>
+				</tr>
+				<tr>
+					<td> Year completed at high school: </td>
+					<td>
+					<input list="browsers" name="browser" />
+					<datalist id="browsers">
+						<option label="browsers" value="Freshman"><option label="browsers" value="Sophomore"><option label="browsers" value="Junior"><option label="browsers" value="Senior">
+					</datalist>
+				</tr>
+				<tr>
+					<td><label for="Tshirt"> Adult T-shirt size: </label></td>
+					<td>
+					<select name="Tshirt[]" size="1" id=Tshirt>
+						<option value="1">Small</option>
+						<option value="2">Medium</option>
+						<option value="3">Large</option>
+						<option value="4">XLarge</option>
+						<option value="5">XXLarge</option>
+					</select></td>
+				</tr>
+			</table>
+			<!-- End of first table -->
+			<p>
+				<em><b>Payment Information</b></em>
+			</p>
+			<table>
+				<!--Payment information -->
+				<tr>
+					<td colspan="2"><b>Resident:</b></td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" name="payment" id="fp" value="f">
+					<label for="fp"> $1,650 Full Payment </label></td>
+					<td>
+					<input type="radio" name="payment" id="mp" value="s">
+					<label for="mp"> $100 (Minimum payment of non-refundable deposit) </label></td>
+				</tr>
+				<tr>
+					<td colspan="2"><b>Commuter</b></td>
+				</tr>
+				<tr>
+					<td>
+					<input type="radio" name="payment" id="fp2" value="f">
+					<label for="fp2"> $1,400 Full Payment </label></td>
+					<td>
+					<input type="radio" name="payment" id="mp2" value="s">
+					<label for="mp2"> $100 (Minimum payment of non-refundable deposit) </label></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<p>
+						<i><b>Payment in full will be required no later than
+						May 13, 2014.</b></i>
+					</p></td>
+				</tr>
+			</table>
+			<!--end of payment table-->
+			<table>
+				<tr>
+					<td><label for="totalamnt"> Total Amount Due: </label></td>
+					<td colspan=3>
+					<input type="text" required="required" size="30" name="Totalamnt" id="totalamnt">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="check"> Personal Check #: </label></td>
+					<td>
+					<input required="required" type="text" size="30" name="check" id="check">
+					</td>
+					<td colspan=2> Make checks payable to SIU </td>
+				</tr>
+				<tr>
+					<td colspan=4>
+					<input type="radio" name="card" id="card" value="v">
+					<label for="card"> Visa </label>
+					<input type="radio" name="card" id="card2" value="d">
+					<label for="card2"> Discover </label>
+					<input type="radio" name="card" id="card3" value="m">
+					<label for="card3"> Mastercard </label></td>
+				</tr>
+				<tr>
+					<td><label for="Ccard"> Credit Card #: </label></td>
+					<td>
+					<input type="text" pattern="([\d]{4})[\-]([\d]{4})[\-]([\d]{4})[\-]([\d]{4})"
+					required="required" size=30 name="card" id="Ccard">
+					</td>
+					<td><label for="expdate"> Exp. Date: </label></td>
+					<td>
+					<input pattern="(0[1-9]|1[012])[/]([\d]{2})" size=12 name="expdate" required="required" id="expdate">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="NOC"> Name on Card: </label></td>
+					<td colspan=3>
+					<input type="text" required="required" size=60 name="expdate" id="NOC">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Billing"> Billing Address: </label></td>
+					<td colspan=3>
+					<input type="text" required="required" size=60 name="billing" id="Billing">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="PayEmail"> Payor Email (required): </label></td>
+					<td colspan=3>
+					<input type="email" required="required" size=60 name="payemail" id="PayEmail">
+					</td>
+				</tr>
+			</table>
+			<p>
+				<b>Please return payment to:</b>
+				<br>
+				Summer Wings, 2014, Continuing Education and Outreach, Mail Code 6705,
+				<br>
+				1255 Lincoln Drive, Southern Illinois University, Carbondale, Illinois 62901
+				<br>
+				Phone: 618/536-7751, Fax: 618/453-5680
+			</p>
+			<p>
+				Visit our website at <a href="http://www.dce.siu.edu">www.dce.siu.edu.</a>
+				for online information and registration.
+			</p>
+			<p>
+				<input type="submit" name="send" value="Send Data">
+				<input type="reset" name="clear" value="Clear Form">
+			</p>
+		</form>
+	</body>
+	<!-- Everything within the body is what will show -->
+</html>
+<!-- End of code -->

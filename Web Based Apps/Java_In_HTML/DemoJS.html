@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> JavaScript </title><!-- name of tab -->
+	</head>
+	<!-- code above is important and needed in every code -->
+	<body>
+		<script>
+			var inputStart = prompt("What is the start Temp?");
+			var startTemp = Number(inputStart);
+			var inputEnd = prompt("What is the end Temp?");
+			var EndTemp = Number(inputEnd);
+		</script>
+		<table border="1">
+			<tr>
+				<th>Fahrenheit</th>
+				<th>Celcius</th>
+			</tr>
+			<script>
+				for ( i = startTemp; i <= EndTemp; i++) {
+					var C = (i - 32) * (5 / 9);
+					document.write("<tr>");
+					document.write("<td>");
+					document.write(i);
+					document.write("</td>");
+					document.write("<td>");
+					document.write(C.toFixed(2));
+					document.write("</td>");
+					document.write("</tr>");
+				}
+
+			</script>
+		</table>
+
+	</body>
+	<!-- Everything within the body is what will show -->
+</html><!-- End of code -->
